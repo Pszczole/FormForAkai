@@ -1,0 +1,113 @@
+<!--
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    AKAI Frontend Task - HTML
+	W tym pliku znajduje się struktura strony z formularzem. Twoim zadaniem jest upiększenie
+	tego formularza. Przeanalizuj poniższy kod. Jego znajomość będzie potrzebna do przerobienia
+	pliku form.css odpowiedzialnego za styl strony. Gdy zapoznasz się ze strukturą strony,
+	przejdź do pliku css/form.css lub js/validation.js po dalsze instrukcje.
+    Powodzenia!
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AKAI Frontend Task</title>
+	<link rel="stylesheet" type="text/css" href="form.css">
+	<meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Merienda+One&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Merienda+One&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+
+</head>
+<body style="background-image: url('rocket.png')" class="bg-image" >
+
+	<section id="task-frontend">
+
+		<div class="container p-3 mb-2 text-white ">
+
+			<h1 class="center main-title">Join us</h1>
+
+				<div class="form top">
+
+					<form action="" id="form" class="main-form" method="POST">
+
+						<div class="row">
+								<div class="col">
+
+										<div class="form-group">
+												<label  for="name">Name</label>
+												<input class="form-control" type="text" name="name" id="first-name" placeholder="Name" required>
+														<div id="invalid-firstname" class="invalid-feedback">First letter must be a capital letter.</div>
+										</div>
+
+
+
+								</div>
+
+								<div class="col">
+
+											<div class="form-group">
+            						<label for="last-name">Last name</label>
+		    								<input class="form-control" type="text" name="last-name" id="last-name" placeholder="Last name" required>
+												<div id="invalid-lastname" class="invalid-feedback">First letter must be a capital letter.</div>
+											</div>
+
+								</div>
+
+						</div>
+
+
+										<div class="form-group">
+											<label for="email">Email</label>
+		    							<input class="form-control" type="email" name="email" id="email" placeholder="Email" required>
+											<div id="invalid-email" class="invalid-feedback"></div>
+										</div>
+
+
+										<div class="row">
+											<span class="form-title" >Choose your path ...</span>
+										</div>
+
+					<div class="checkbox-group">
+
+						<div class="form-check form-check-inline">
+            	<input class="form-check-input" type="checkbox" id="frontend-checkbox" name="section" value="frontend">
+            	<label class="form-check-label" for="frontend-checkbox">Frontend</label>
+						</div>
+
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="checkbox" id="backend-checkbox" name="section" value="backend">
+							<label class="form-check-label" for="backend-checkbox">Backend</label>
+						</div>
+
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="checkbox" id="mobile-checkbox" name="section" value="mobile">
+							<label class="form-check-label" for="mobile-checkbox">Mobile</label>
+						</div>
+
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="checkbox" id="graphics-checkbox" name="section" value="graphics">
+							<label class="form-check-label" for="graphics-checkbox">Graphics</label>
+						</div>
+
+					</div>
+
+					<div class="but">
+							<button type="submit" class="btn btn-dark btn-lg"  name="form-submit">Submit</button>
+					</div>
+
+						</form>
+
+					</div>
+
+	</div>
+</section>
+
+<script type="text/javascript" src="validation.js"></script>
+
+</body>
+</html>
